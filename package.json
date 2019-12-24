@@ -1,0 +1,38 @@
+{
+  "name": "my-single-spa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:dev": "rollup -c",
+    "serve": "SERVE=true rollup -c -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/floiges/my-single-spa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/floiges/my-single-spa/issues"
+  },
+  "homepage": "https://github.com/floiges/my-single-spa#readme",
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/plugin-syntax-dynamic-import": "^7.7.4",
+    "@babel/preset-env": "^7.7.7",
+    "rollup": "^1.27.14",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-serve": "^1.0.1"
+  },
+  "browserslist": [
+    "ie >=11",
+    "last 4 Safari major versions",
+    "last 10 Chrome major versions",
+    "last 10 Firefox major versions",
+    "last 4 Edge major versions"
+  ]
+}
