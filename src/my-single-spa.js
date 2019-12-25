@@ -14,6 +14,10 @@ export {
 } from './applications/apps';
 export { start } from './start';
 export {
+  mountSystemService,
+  getSystemService,
+} from './services';
+export {
   NOT_LOADED,
   LOAD_RESOURCE_CODE,
   NOT_BOOTSTRAPPED,
