@@ -65,6 +65,7 @@ window.history.replaceState = function (state, title, url) {
 };
 
 function mockPopStateEvents(state) {
+  // 手动触发 popstate
   return new PopStateEvent('popstate', { state, });
 }
 

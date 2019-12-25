@@ -62,6 +62,13 @@ export function getAppNames() {
   return APPS.map(item => item.name);
 }
 
+/**
+ * 获取 app 状态
+ *
+ * @export
+ * @param {*} name
+ * @returns
+ */
 export function getAppStatus(name) {
   if (!name) {
     return APPS.map(item => item.status);
@@ -71,10 +78,22 @@ export function getAppStatus(name) {
   return app ? app.status : null;
 }
 
+/**
+ * 获取原始 app 数据
+ *
+ * @export
+ * @returns
+ */
 export function getRawApps() {
   return [...APPS];
 }
 
+/**
+ * 获取 mounted 的 app
+ *
+ * @export
+ * @returns
+ */
 export function getMountedApps() {
   return APPS.filter(isActive).map(item => item.name);
 }

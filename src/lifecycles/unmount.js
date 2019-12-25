@@ -9,6 +9,13 @@ import {
 import { reasonableTime } from '../applications/timeouts';
 import { getProps } from './helper';
 
+/**
+ * 卸载 app
+ *
+ * @export
+ * @param {*} app
+ * @returns
+ */
 export function toUnmountPromise(app) {
   if (app.status !== MOUNTED) {
     return Promise.resolve(app);

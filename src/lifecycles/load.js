@@ -15,6 +15,13 @@ import {
 } from './helper';
 import { ensureAppTimeouts } from '../applications/timeouts';
 
+/**
+ * 加载 app
+ *
+ * @export
+ * @param {*} app
+ * @returns
+ */
 export function toLoadPromise(app) {
   if (app.status !== NOT_LOADED && app.status !== LOAD_ERROR) {
     return Promise.resolve(app);

@@ -8,6 +8,13 @@ import {
 import { reasonableTime } from '../applications/timeouts';
 import { getProps } from './helper';
 
+/**
+ * 更新 service
+ *
+ * @export
+ * @param {*} service
+ * @returns
+ */
 export function toUpdatePromise(service) {
   if (service.status !== MOUNTED) {
     return Promise.resolve(service);

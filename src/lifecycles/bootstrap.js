@@ -9,6 +9,13 @@ import {
 import { reasonableTime } from '../applications/timeouts';
 import { getProps } from './helper';
 
+/**
+ * 启动 app
+ *
+ * @export
+ * @param {*} app
+ * @returns
+ */
 export function toBootstrapPromise(app) {
   if (app.status !== NOT_BOOTSTRAPPED) {
     return Promise.resolve(app);
