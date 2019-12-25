@@ -68,7 +68,7 @@ function mockPopStateEvents(state) {
   return new PopStateEvent('popstate', { state, });
 }
 
-export function callCapturedEvent(eventArgs) {
+export function callCapturedEvents(eventArgs) {
   if (!eventArgs) {
     return;
   }

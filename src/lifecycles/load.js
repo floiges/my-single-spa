@@ -54,5 +54,11 @@ export function toLoadPromise(app) {
     app.unmount = flattenFnArray(module.unmount, `app: ${app.name} unmount functions`);
     app.unload = flattenFnArray(module.unload ? module.unload : [], `app: ${app.name} unload functions`);
     app.timeouts = ensureAppTimeouts(module.timeouts);
+
+    return app;
+  }).catch(e => {
+    console.log(e);
+    app.status = LOAD_ERROR;
+    return app;
   });
 }

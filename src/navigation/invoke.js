@@ -105,6 +105,9 @@ export function invoke(pendings, eventArgs) {
     return resolveValue;
   }
 
+  // 每次循环终止时触发已拦截的 location 事件
+  // 保证微前端框架的 location 触发时机总是首先被执行
+  // 而 Vue 或 React 的 Router 总是在后面执行
   function callAllLocationEvents() {
     pendings
     && pendings.length
