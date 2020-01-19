@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/floiges/my-single-spa/issues"
   },
-  "homepage": "https://github.com/floiges/my-single-spa#readme",
+  "homepage": "https://github.com/floiges/my-single-spa",
   "devDependencies": {
     "@babel/core": "^7.7.7",
     "@babel/plugin-syntax-dynamic-import": "^7.7.4",
